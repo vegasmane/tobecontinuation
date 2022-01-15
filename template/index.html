@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <!--style.css-->
+   <link rel="stylesheet" href="/template/style.css">
+   <!--title-->
+   <title>rapindex</title>
+</head>
+
+<body>
+   <!--grid container-->
+   <div class="grid-container">
+      <!--header-->
+      <header class="header">
+         <!--logo  buttons left-->
+         <div class="brand">
+            <!--menu button left-->
+            <span class="toggle">
+               <button class="button"> &#9760; </button>
+            </span>
+
+            <!--logo button-->
+            <a href="index.html">Rapindex</a>
+         </div>
+         <!--nav buttons right-->
+         <div class="header-links">
+            <a href="favourite.html">favourites</a>
+            <a href="signin.html">sign in</a>
+         </div>
+      </header>
+      <!------options before main------->
+      <!--sidebar-->
+      <nav>
+         <span class="close">X</span>
+         <a href="#index.html">Home</a>
+         <a href="#countries.html">countries</a>
+         <a href="#signin.html">signing</a>
+         <a href="#favourite.html">favourites</a>
+      </nav>
+      <!--main-->
+      <main class="main">
+         <div class="content">
+            <!--ensemble organize of rappers-->
+            <ul class="rappers">
+               <!--rapper box-->
+               <li>
+                  <div class="rapper">
+                     <!--rapper information-->
+                     <img class="rapper-image" src="/template/images/rappers/50 cent.png" alt="50cent">
+                     <div class="rapper-name"><a href="rapper.html">50 cent</a></div>
+                     <div class="rapper-country">america</div>
+                     <div class="rapper-rating">4.5 stars (10 reviews)</div>
+                  </div>
+               </li>
+
+               <!--rapper box-->
+               <li>
+                  <div class="rapper">
+                     <!--rapper information-->
+                     <img class="rapper-image" src="/template/images/rappers/50 cent.png" alt="50cent">
+                     <div class="rapper-name"><a href="rapper.html">50 cent</a></div>
+                     <div class="rapper-country">america</div>
+                     <div class="rapper-rating">4.5 stars (10 reviews)</div>
+                  </div>
+               </li>
+
+               <!--rapper box-->
+               <li>
+                  <div class="rapper">
+                     <!--rapper information-->
+                     <img class="rapper-image" src="/template/images/rappers/50 cent.png" alt="50cent">
+                     <div class="rapper-name"><a href="rapper.html">50 cent</a></div>
+                     <div class="rapper-country">america</div>
+                     <div class="rapper-rating">4.5 stars (10 reviews)</div>
+                  </div>
+               </li>
+
+            </ul>
+         </div>
+
+      </main>
+
+      <!--footer-->
+      <footer class="footer">
+         page official
+      </footer>
+
+   </div>
+
+   <!--*****************script*******************-->
+
+   <!--*******script button nav*********-->
+
+   <script>
+      let toggler = document.querySelector(".toggle");
+      let nav = document.querySelector("nav");
+      let close = document.querySelector(".close");
+      toggler.onclick = function () {
+         nav.classList.add("open");
+      };
+      close.onclick = function () {
+         this.parentElement.classList.remove("open");
+      };
+      document.onkeyup = function (e) {
+         if (e.key === "Escape") {
+            nav.classList.remove("open");
+         }
+      };
+   </script>
+
+</body>
+
+</html>
